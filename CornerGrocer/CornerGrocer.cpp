@@ -1,4 +1,5 @@
-
+#include "FileReader.h"
+#include "FrequencyTable.h"
 
 #include <iostream>
 #include <map>
@@ -7,7 +8,12 @@
 int main()
 {
     
-    std::map<std::string, int> groceryCount;
+    FileReader fileReader;
+    FrequencyTable table;
+
+    fileReader.ReadFile(table);
+
+    table.PrintTable();
     
 }
 

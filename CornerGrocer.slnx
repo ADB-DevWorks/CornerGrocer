@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="CornerGrocer/CornerGrocer.vcxproj" />
+  <Project Path="CornerGrocer/CornerGrocer.vcxproj" Id="7db26c76-8b5d-40ee-96d4-1ed011c32d6b" />
 </Solution>
