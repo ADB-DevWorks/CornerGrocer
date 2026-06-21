@@ -14,9 +14,11 @@ public:
 	void AddItem(std::string);
 	void PrintItemFrequency(std::string item);
 	void PrintTable();
+	void PrintHistogram();
 	std::map<std::string, int> GetTable();
 
 private:
 	std::map<std::string, int> table;
 };
+
 

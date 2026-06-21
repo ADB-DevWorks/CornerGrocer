@@ -13,9 +13,7 @@ int main()
 
     fileReader.ReadFile(table);
 
-    std::string item = "Zucchini";
-
-    table.PrintItemFrequency(item);
+    table.PrintHistogram();
     
 }
 

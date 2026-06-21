@@ -19,3 +19,10 @@ void FrequencyTable::PrintTable() {
 		std::cout << pair.first << " " << pair.second << std::endl;
 	}
 }
+
+void FrequencyTable::PrintHistogram() {
+
+	for (const auto& pair : table) {
+		std::cout << pair.first << " " << std::string(pair.second, '*') << std::endl;
+	}
+}
