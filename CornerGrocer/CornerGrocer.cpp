@@ -1,5 +1,6 @@
 #include "FileReader.h"
 #include "FrequencyTable.h"
+#include "MenuRenderer.h"
 
 #include <iostream>
 #include <map>
@@ -10,10 +11,12 @@ int main()
     
     FileReader fileReader;
     FrequencyTable table;
+    MenuRenderer renderer;
+    
 
     fileReader.ReadFile(table);
 
-    table.PrintHistogram();
+    renderer.RenderMenu();
     
 }
 
