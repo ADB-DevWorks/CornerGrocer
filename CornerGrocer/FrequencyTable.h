@@ -16,7 +16,7 @@ public:
 	void PrintTable();
 	void PrintHistogram();
 	bool Contains(std::string item);
-	std::map<std::string, int> GetTable();
+	const std::map<std::string, int>& GetTable() const;
 
 private:
 	std::map<std::string, int> table;

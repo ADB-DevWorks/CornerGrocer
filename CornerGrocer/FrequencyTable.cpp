@@ -1,6 +1,6 @@
 #include "FrequencyTable.h"
 
-std::map<std::string, int> FrequencyTable::GetTable() { return table; }
+const std::map<std::string, int>& FrequencyTable::GetTable() const { return table; }
 
 void FrequencyTable::AddItem(std::string soldItem) {
 	

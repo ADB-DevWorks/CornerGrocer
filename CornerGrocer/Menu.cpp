@@ -24,7 +24,9 @@ void Menu::SelectOption(FrequencyTable& table, MenuRenderer& renderer) {
 				c = std::tolower(c);
 			}
 
-			item[0] = std::toupper(item[0]);
+			if (!item.empty()) {
+				item[0] = std::toupper(item[0]);
+			}
 
 			if (table.Contains(item)) {
 				table.PrintItemFrequency(item);
@@ -33,26 +35,22 @@ void Menu::SelectOption(FrequencyTable& table, MenuRenderer& renderer) {
 				std::cout << "Item invald or hasn't been sold.\nEnter a differnt item." << std::endl;
 				continue;
 			}
-			WaitForKeypres();
+			WaitForKeypress();
 			continue;
-			break;
 		case 2:
 			table.PrintTable();
-			WaitForKeypres();
+			WaitForKeypress();
 			continue;
-			break;
 		case 3:
 			table.PrintHistogram();
-			WaitForKeypres();
+			WaitForKeypress();
 			continue;
-			break;
 		case 4:
 			return;
 			break;
 		default:
-			std::cout << "Invald Option";
+			std::cout << "Invald Option\n";
 			continue;
-			break;
 		}
 		break;
 	}
@@ -60,7 +58,7 @@ void Menu::SelectOption(FrequencyTable& table, MenuRenderer& renderer) {
 
 }
 
-void Menu::WaitForKeypres() {
+void Menu::WaitForKeypress() {
 	std::cout << "\n\nPress any key to return to Main Menu...\n";
 	std::cin.ignore();
 	std::cin.get();

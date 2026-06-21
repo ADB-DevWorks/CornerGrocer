@@ -8,7 +8,7 @@ class Menu
 {
 public:
 	void SelectOption(FrequencyTable& table, MenuRenderer& renderer);
-	void WaitForKeypres();
+	void WaitForKeypress();
 	
 };
 
