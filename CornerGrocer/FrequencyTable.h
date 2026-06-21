@@ -15,6 +15,7 @@ public:
 	void PrintItemFrequency(std::string item);
 	void PrintTable();
 	void PrintHistogram();
+	bool Contains(std::string item);
 	std::map<std::string, int> GetTable();
 
 private:

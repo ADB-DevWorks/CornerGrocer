@@ -26,3 +26,8 @@ void FrequencyTable::PrintHistogram() {
 		std::cout << pair.first << " " << std::string(pair.second, '*') << std::endl;
 	}
 }
+
+bool FrequencyTable::Contains(std::string item) {
+
+	return table.count(item);
+}
