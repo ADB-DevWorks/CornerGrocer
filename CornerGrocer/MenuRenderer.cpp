@@ -1,6 +1,7 @@
 #include "MenuRenderer.h"
 #include <iostream>
 
+// Class designed for displaying the menu ui
 
 void MenuRenderer::RenderMenu() {
 

@@ -9,15 +9,18 @@
 int main()
 {
     
+    // Initilize classes
     FileReader fileReader;
     FileWriter fileWriter;
     FrequencyTable table;
     MenuRenderer renderer;
     Menu menu;
     
+    // Read and write the txt and dat files
     fileReader.ReadFile(table);
     fileWriter.WriteToFile(table);
     
+    // Runs program
     menu.SelectOption(table, renderer);  
 
     return 0;
