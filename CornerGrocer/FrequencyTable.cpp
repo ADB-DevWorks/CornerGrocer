@@ -8,10 +8,14 @@ void FrequencyTable::AddItem(std::string soldItem) {
 
 }
 
+void FrequencyTable::PrintItemFrequency(std::string item) {
+	std::cout << item << " " << table.at(item) << std::endl;
+}
+
 void FrequencyTable::PrintTable() {
 
 
 	for (const auto& pair : table) {
-		std::cout << pair.first << std::endl;
+		std::cout << pair.first << " " << pair.second << std::endl;
 	}
 }

@@ -12,6 +12,7 @@ class FrequencyTable
 
 public:
 	void AddItem(std::string);
+	void PrintItemFrequency(std::string item);
 	void PrintTable();
 	std::map<std::string, int> GetTable();
 
